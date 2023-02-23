@@ -1,0 +1,26 @@
+.t-img-select__container {
+    display: flex;
+}
+
+.t-img-select__control {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.banner_amount_1000 {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    background-color: #1a1a1a3d;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    z-index: 100;
+    color: #fffbfb;
+    font-size: 1.6vw;
+    text-align: center;
+    font-style: oblique;
+    font-family: monospace;
+}
