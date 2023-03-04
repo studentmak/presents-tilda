@@ -1,5 +1,5 @@
 let arr_presents_amount_1000 = [
-    "Сырные палочки", "Стрипсы", "Кальмар темпура",
+    "Сырные палочки", "Стрипсы", "Кольца кальмара",
 ].map(i => i.replace(/\s+/g, '_').toUpperCase())
 
 let arr_presents_amount_1500 = [
