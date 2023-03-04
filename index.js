@@ -14,17 +14,15 @@ let presents = document.querySelectorAll(".t-img-select__control")
 
 function add_class(){
     for(i=0; i<presents.length; i++){
-        let id
+        let name_class
         let input_value = presents[i].querySelector("input").value.replace(/\s+/g, '_').toUpperCase()
 
         if(arr_presents_amount_1000.includes(input_value)){
-            id = "presents_amount_1000"
+            name_class = "presents_amount_1000"
         } else if (arr_presents_amount_1500.includes(input_value)){
-            id = "presents_amount_1500"
+            name_class = "presents_amount_1500"
         } else if (arr_presents_amount_2000.includes(input_value)){
-            id = "presents_amount_2000"
-        } else {
-            id = 0
+            name_class = "presents_amount_2000"
         }
         presents[i].classList.add(id)
     }
