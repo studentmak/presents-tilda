@@ -76,7 +76,7 @@ function visibility_banners(){
 //When loading the page
 add_class()
 add_banner()  
-
+visibility_banners();
 // for proxy
 visibility_banners();
 
