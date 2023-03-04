@@ -1,5 +1,6 @@
 .t-img-select__container {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .t-img-select__control {
@@ -9,6 +10,10 @@
     justify-content: center;
 }
 
+.t-img-select__control > div {
+    border-radius: 8px;
+}
+
 .banner_amount_1000 {
     display: flex;
     position: absolute;
@@ -16,10 +21,39 @@
     background-color: #1a1a1a3d;
     height: 100%;
     width: 100%;
-    border-radius: 10px;
     z-index: 100;
     color: #fffbfb;
-    font-size: 1.6vw;
+    font-size: large;
+    text-align: center;
+    font-style: oblique;
+    font-family: monospace;
+}
+
+.banner_amount_1500 {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    background-color: #1a1a1a3d;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    color: #fffbfb;
+    font-size: large;
+    text-align: center;
+    font-style: oblique;
+    font-family: monospace;
+}
+
+.banner_amount_2000 {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    background-color: #1a1a1a3d;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    color: #fffbfb;
+    font-size: 1vw;
     text-align: center;
     font-style: oblique;
     font-family: monospace;

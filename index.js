@@ -1,5 +1,5 @@
 let arr_presents_amount_1000 = [
-    "", "", "",
+    "Сырные палочки", "Стрипсы", "Кальмар темпура",
 ].map(i => i.replace(/\s+/g, '_').toUpperCase())
 
 let arr_presents_amount_1500 = [
@@ -12,10 +12,10 @@ let arr_presents_amount_2000 = [
 
 let presents = document.querySelectorAll(".t-img-select__control")
 
-function add_class(){
+function add_class(presents){
     for(i=0; i<presents.length; i++){
         let id
-        let input_value = presents[i].querySelector("input").value.replace(" ", "_").toUpperCase()
+        let input_value = presents[i].querySelector("input").value.replace(/\s+/g, '_').toUpperCase()
 
         if(arr_presents_amount_1000.includes(input_value)){
             id = "presents_amount_1000"
@@ -35,6 +35,10 @@ let presents_amount_1500 = document.querySelectorAll(".presents_amount_1500")
 let presents_amount_2000 = document.querySelectorAll(".presents_amount_2000")
 
 function add_banner(){
+    let presents_amount_1000 = document.querySelectorAll(".presents_amount_1000")
+    let presents_amount_1500 = document.querySelectorAll(".presents_amount_1500")
+    let presents_amount_2000 = document.querySelectorAll(".presents_amount_2000")
+
     for(i=0; i<presents_amount_1000.length; i++){
         let banner_amount_1000 = document.createElement("div")
         banner_amount_1000.setAttribute("class", "banner_amount_1000")
@@ -72,8 +76,14 @@ function visibility_banners(){
 }
 
 //When loading the page
-add_class();
-add_banner();
+add_class(() => {
+    add_banner()  
+})
 
 // for proxy
 visibility_banners();
+
+
+
+
+
