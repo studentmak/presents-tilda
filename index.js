@@ -12,7 +12,7 @@ let arr_presents_amount_2000 = [
 
 let presents = document.querySelectorAll(".t-img-select__control")
 
-function add_class(presents){
+function add_class(){
     for(i=0; i<presents.length; i++){
         let id
         let input_value = presents[i].querySelector("input").value.replace(/\s+/g, '_').toUpperCase()
@@ -76,9 +76,8 @@ function visibility_banners(){
 }
 
 //When loading the page
-add_class(() => {
-    add_banner()  
-})
+add_class()
+add_banner()  
 
 // for proxy
 visibility_banners();
