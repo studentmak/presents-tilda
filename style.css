@@ -18,43 +18,67 @@
     display: flex;
     position: absolute;
     align-items: center;
-    background-color: #1a1a1a3d;
+    background-color: #1d1d1d57;
     height: 100%;
     width: 100%;
     z-index: 100;
     color: #fffbfb;
-    font-size: large;
+    font-size: 18px;
     text-align: center;
-    font-style: oblique;
-    font-family: monospace;
+    font-family: 'TildaSans';
+    animation: 2s neon-2 alternate-reverse infinite;
+    font-weight: 900;
 }
 
 .banner_amount_1500 {
     display: flex;
     position: absolute;
     align-items: center;
-    background-color: #1a1a1a3d;
+    background-color: #1d1d1d57;
     height: 100%;
     width: 100%;
     z-index: 100;
     color: #fffbfb;
-    font-size: large;
+    font-size: 18px;
     text-align: center;
-    font-style: oblique;
-    font-family: monospace;
+    font-family: 'TildaSans';
+    animation: 2s neon-2 alternate-reverse infinite;
+    font-weight: 900;
 }
 
 .banner_amount_2000 {
     display: flex;
     position: absolute;
     align-items: center;
-    background-color: #1a1a1a3d;
+    background-color: #1d1d1d57;
     height: 100%;
     width: 100%;
     z-index: 100;
     color: #fffbfb;
-    font-size: 1vw;
+    font-size: 18px;
     text-align: center;
-    font-style: oblique;
-    font-family: monospace;
+    font-family: 'TildaSans';
+    animation: 2s neon-2 alternate-reverse infinite;
+    font-weight: 900;
 }
+
+.t-img-select__text.t-text.t-text_xs {
+    font-weight: 400;
+}
+
+@keyframes neon-2 {
+    from {
+        text-shadow: 0 0 5px #FFF,
+        0 0 10px #FFF,
+        0 0 15px #FFF,
+        0 0 20px #BFE2FF;
+    }
+    to {
+        text-shadow: 0 0 20px #BFE2FF,
+        0 0 20px #BFE2FF,
+        0 0 30px #BFE2FF,
+        0 0 45px #BFE2FF,
+        0 0 100px #BFE2FF,
+        0 0 300px #BFE2FF,
+    }
+}  

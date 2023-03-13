@@ -24,7 +24,7 @@ function add_class(){
         } else if (arr_presents_amount_2000.includes(input_value)){
             name_class = "presents_amount_2000"
         }
-        presents[i].classList.add(id)
+        presents[i].classList.add(name_class)
     }
 }
 
